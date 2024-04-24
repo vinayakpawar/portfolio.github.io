@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75b0241959.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Vinayak</span><br>Pawar from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- .......................about............................. -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                    <img src="vinayak.png.jpeg">
+                </div>
+                <div class="about-col-2">
+
+                    <h1 class="Subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam quis, neque atque, facere
+                        ullam architecto cupiditate officia optio quam modi. Cum recusandae voluptas illum voluptatum
+                        dicta molestiae magni neque.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>2023-24</span><br>System Analyst <br>transworld system india PVT LTD</li>
+                            <li><span>2022-23</span><br>Internship at learnstick</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>MCA<br>Mumbai University</li>
+                            <li><span>2021</span><br>BSC IT<br>Mumbai University</li>
+                            <li><span>2018</span><br>HSC <br>Maharashtra State Board</li>
+                            <li><span>2016</span><br>sSC <br>Maharashtra State Board</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="Subtitle">My Services</h1>
+            <div class="servicelist">
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus libero deserunt
+                        eligendi necessitatibus minima nostrum, cumque quasi magnam molestiae.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-crop"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus libero deserunt
+                        eligendi necessitatibus minima nostrum, cumque quasi magnam molestiae.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Backend Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus libero deserunt
+                        eligendi necessitatibus minima nostrum, cumque quasi magnam molestiae.</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------portfolio-------------------- -->
+
+    <div id="portfolio"></div>
+        <div class="container">
+            <div class="subtitle">My Work</div>
+            <div class="worklist">
+                <div class="work">
+                    <img src="work1.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, perferendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png" alt="">
+                    <div class="layer">
+                        <h3>Online app</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, perferendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png" alt="">
+                    <div class="layer">
+                        <h3>Web app</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, perferendis?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+<!-- -------------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contactleft">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>pawarvinayak326@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>9920171355</p>
+                <div class="socialicons">
+                    <a href="https://www.linkedin.com/in/vinayak-pawar-72755225a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/official_vinayak_31?igsh=bnI3cDdnOWZmb2tx&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/vinayak.pawar.5055233?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="Vinayak CV IT.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Merssage"></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>       
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Vinayak.Made with <i class="fa-solid fa-heart"></i> for Personal Portfolio</p>
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activelink");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink")
+           document.getElementById(tabname).classList.add("activetab");
+
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby0yVJeoFm4QH4NaNCwB9qx4DanKiwZdCXJzleMFkcR6NgMNv9SZJhzRPR724exsplr-A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
